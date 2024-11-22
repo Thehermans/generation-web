@@ -3,12 +3,12 @@ import { Button } from "../ui/moving-border";
 import { Link } from "lucide-react";
 
 interface BlogCardProps {
-    image: string;
-    date?: string;
-    CardTitle: string;
-    CardDescription: string;
-    author?: string;
-  }
+  image: string;
+  date?: string;
+  CardTitle: string;
+  CardDescription: string;
+  author?: string;
+}
 
 const Blog = () => {
   return (
@@ -25,7 +25,10 @@ const Blog = () => {
                   Our Recent News
                 </h2>
                 <p className="text-base text-body-color dark:text-dark-6">
-                Stay updated with the latest happenings, insights, and milestones in the world of writing and literature. Explore news, stories, and achievements from renowned authors and the literary community.
+                  Stay updated with the latest happenings, insights, and
+                  milestones in the world of writing and literature. Explore
+                  news, stories, and achievements from renowned authors and the
+                  literary community.
                 </p>
               </div>
             </div>
@@ -57,11 +60,10 @@ const Blog = () => {
           <Button
             borderRadius="2rem"
             className=" dark:bg-slate-900 text-slate-200 dark:text-white border-neutral-200 dark:border-slate-800"
-            >
+          >
             Explore More Content
-            </Button>
+          </Button>
         </div>
-        
       </section>
     </>
   );

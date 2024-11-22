@@ -1,13 +1,6 @@
 "use client";
-import React from "react";
-import {
-  motion,
-  useAnimationFrame,
-  useMotionTemplate,
-  useMotionValue,
-  useTransform,
-} from "framer-motion";
-import { useRef } from "react";
+import React, { useRef } from "react";
+import { motion, useAnimationFrame, useMotionTemplate, useMotionValue, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export function Button({
@@ -22,12 +15,12 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
+  as?: React.ElementType; // Use React.ElementType for 'as' prop
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
+  [key: string]: unknown; // More specific than 'any'
 }) {
   return (
     <Component
@@ -80,9 +73,9 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
+  [key: string]: unknown; // More specific than 'any'
 }) => {
-  const pathRef = useRef<any>();
+  const pathRef = useRef<SVGRectElement | null>(null); // Use SVGRectElement for the ref
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
