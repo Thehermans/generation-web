@@ -1,7 +1,6 @@
 // import { ButtonDemo } from "@/components/Cta";
 import { AnimatedTestimonialsDemo } from "@/components/Aboutus/page";
 import Blog from "@/components/Blog-showcase/page";
-import { AppleCardsCarouselDemo } from "@/components/carousel/page";
 import CreateAccount from "@/components/CreateAccount";
 import Footer from "@/components/footer/page";
 import Header from "@/components/Header/page";
@@ -17,7 +16,6 @@ export default function Home() {
       
       <AnimatedTestimonialsDemo/>
       <WhyUS/>
-      <AppleCardsCarouselDemo/>
       <CreateAccount/>
       <MarqueeDemo/>
       <AnimatedPinDemo/>
