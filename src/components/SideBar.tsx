@@ -1,8 +1,6 @@
 'use client'
 
-import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { AiOutlineAlignRight } from "react-icons/ai";
 
@@ -18,9 +16,7 @@ import {
 } from "@/components/ui/sheet";
 
 export function SheetDemo() {
-  // State for input values
-  const [name, setName] = useState("Pedro Duarte");
-  const [username, setUsername] = useState("@peduarte");
+ 
 
   return (
     <Sheet>
@@ -39,23 +35,13 @@ export function SheetDemo() {
             <Label htmlFor="name" className="text-right">
               Name
             </Label>
-            <Input
-              id="name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}  // Handle name change
-              className="col-span-3"
-            />
+            
           </div>
           <div className="grid grid-cols-4 items-center gap-4">
             <Label htmlFor="username" className="text-right">
               Username
             </Label>
-            <Input
-              id="username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}  // Handle username change
-              className="col-span-3"
-            />
+           
           </div>
         </div>
         <SheetFooter>

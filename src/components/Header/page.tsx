@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
-import { MovingBorderDemo } from "../button"
-import { BorderBeamDemo } from "../light-border"
-import NavMenu from "../NavMenu"
-import { LampContainer, LampDemo } from "../ui/lamp"
+import { LampDemo } from "../ui/lamp"
 import { BorderBeam } from "@/components/ui/border-beam";
 import { motion } from "framer-motion";
 

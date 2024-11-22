@@ -2,8 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import NavMenu from "../NavMenu";
-import { MovingBorderDemo } from "../button";
 import { Button } from "./moving-border";
 import { LuInstagram } from "react-icons/lu";
 import { MdFacebook } from "react-icons/md";
