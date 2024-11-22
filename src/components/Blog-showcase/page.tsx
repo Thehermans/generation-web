@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ui/moving-border";
+import { Link } from "lucide-react";
 
 interface BlogCardProps {
     image: string;
@@ -83,12 +84,12 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, author }: BlogCardP
               </span>
             )}
             <h3>
-              <a
+              <Link
                 href="/#"
                 className="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white sm:text-2xl lg:text-xl xl:text-2xl"
               >
                 {CardTitle}
-              </a>
+              </Link>
             </h3>
             <p className="text-base text-body-color dark:text-dark-6">
               {CardDescription}
